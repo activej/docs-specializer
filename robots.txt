@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://specializer.activej.io/sitemap.xml

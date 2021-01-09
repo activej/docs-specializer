@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176574648-1"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176574648-1');
+    </script>
+    
+    <link rel='stylesheet' href='/static/css/pygment_trac.css'/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <title>ActiveJ Specializer Examples | A little bit of magic to speed up your code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" ActiveJ Specializer is a lightweight Java library which automagically speeds up your code ">
+    <meta name="keywords" content=" specializer,java,java framework,java for beginners,specialization,speed up code,jvm optimization ">
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <meta name="og:description" content="ActiveJ is an alternative Java platform built from the ground up as a replacement of Spring, Spark, Quarkus, Micronauts, and other solutions. It is minimalistic, boilerplate-free, and provides outstanding performance." />
+    <meta name="og:image" content="https://activej.io/static/images/AJ_Card.jpeg" />
+    <meta name="og:title" content="ActiveJ - An Alternative Java platform built for web, high load, and cloud development" />
+</head>
+<body>
+    <div class="navbar-container-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <ul class="navbar-nav-visible mr-auto mt-1 mt-lg-0">
+                <div class="logo-link-title mr-5">
+                    <img src="/favicon.png" style="max-width: 25px">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <a class="navbar-nav__link logo-link-title" href="/" style="margin-left: 5px">ActiveJ Specializer</a>
+                    
+                    
+                </div>
+            </ul>
+            <button class="navbar-toggler m-1 ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <div class="container">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <ul class="navbar-nav navbar-nav-visible mr-auto mt-1 mt-lg-0">
+                        
+                        <li>
+                            <a class="navbar-nav__link nav-expanded" href="/examples.html">
+                                Examples
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                    
+                </div>
+                <span>
+              <ul class="navbar-nav expanded-links navbar-nav-visible mr-auto mt-1 mt-lg-0">
+                  <li class="dropdown">
+                    <a class="nav-link nav-expanded">Components</a>
+                    <ul class="dropdown__content">
+                        
+                            <div class="dropdown__content-wrapper">
+                                
+                                    <a href="https://activej.io" class="dropdown__content__item ">
+                                        <li>
+                                            <div href="https://activej.io">ActiveJ</div>
+                                        </li>
+                                        <p class="dropdown__content__item__text"> Redefining Java for modern web applications </p>
+                                    </a>
+                                
+                                    <a href="https://inject.activej.io" class="dropdown__content__item ">
+                                        <li>
+                                            <div href="https://inject.activej.io">ActiveJ Inject</div>
+                                        </li>
+                                        <p class="dropdown__content__item__text"> Lightning-fast and ultimately powerful DI library </p>
+                                    </a>
+                                
+                                    <a href="https://serializer.activej.io" class="dropdown__content__item ">
+                                        <li>
+                                            <div href="https://serializer.activej.io">ActiveJ Serializer</div>
+                                        </li>
+                                        <p class="dropdown__content__item__text"> The fastest JVM serializer in the world </p>
+                                    </a>
+                                
+                                    <a href="https://codegen.activej.io" class="dropdown__content__item ">
+                                        <li>
+                                            <div href="https://codegen.activej.io">ActiveJ Codegen</div>
+                                        </li>
+                                        <p class="dropdown__content__item__text"> Dynamic bytecode generation without overhead of reflection </p>
+                                    </a>
+                                
+                                    <a href="https://specializer.activej.io" class="dropdown__content__item  selected-link ">
+                                        <li>
+                                            <div href="https://specializer.activej.io">ActiveJ Specializer</div>
+                                        </li>
+                                        <p class="dropdown__content__item__text"> A little bit of magic to speed up your code </p>
+                                    </a>
+                                
+                                    <a href="https://rpc.activej.io" class="dropdown__content__item ">
+                                        <li>
+                                            <div href="https://rpc.activej.io">ActiveJ RPC</div>
+                                        </li>
+                                        <p class="dropdown__content__item__text"> Lightning-fast binary protocol for microservices architecture </p>
+                                    </a>
+                                
+                                    <a href="https://fs.activej.io" class="dropdown__content__item ">
+                                        <li>
+                                            <div href="https://fs.activej.io">ActiveJ FS</div>
+                                        </li>
+                                        <p class="dropdown__content__item__text"> Tiny abstraction for managing local, remote, and distributed FS </p>
+                                    </a>
+                                
+                           </div>
+                        
+                    </ul>
+                </li>
+                  <li><a class="navbar-nav__link" href="https://activej.io/blog/release-notes.html">Blog</a> </li>
+                <li><a class="navbar-nav__link" href="http://uikernel.io">UIKernel</a></li>
+                <li><a class="navbar-nav__link" href="https://adkernel.com">AdKernel</a></li>
+                <li><a class="navbar-nav__link" href="https://github.com/activej/activej">GitHub</a></li>
+                <li><a class="navbar-nav__link" href="/about.html">About us</a></li>
+              </ul>
+            </span>
+            </div>
+        </nav>
+    </div>
+</div>
+
+    <div class="content">
+        
+            <div class="container">
+                <div class="row">
+                    <div class="px-0 mb-3 sidebar">
+    
+<h3>Examples</h3>
+<ul>
+    
+    <li>
+        <a href="/examples.html#simple-calculator">Simple Calculator</a>
+    </li>
+    
+</ul>
+
+
+</div>
+<div class="pr-3 markdown-content docs-content">
+    <div class="status-wrapper">
+        <h1>ActiveJ Specializer Examples </h1>
+    </div>
+    <div class="note-wrapper">
+    <div class="note">
+        <b>Note:</b>
+        Please keep in mind that ActiveJ Specializer is an experimental project, use it cautiously. 
+It doesn't support lambda expressions and may have difficulties with specializing non-trivial instances.
+    </div>
+</div>
+
+<h4 id="simple-calculator">Simple Calculator</h4>
+<p>We took this <a href="https://github.com/jparsec/jparsec/wiki/Tutorial">Parsec calculator tutorial</a> and adapted it a little bit 
+for ActiveJ Specializer. In the original tutorial Parsec returns parsed expressions as double values:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="nc">Parser</span><span class="o">&lt;</span><span class="nc">Double</span><span class="o">&gt;</span> <span class="n">parser</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">OperatorTable</span><span class="o">&lt;</span><span class="nc">Double</span><span class="o">&gt;()</span>
+    <span class="o">.</span><span class="na">infixl</span><span class="o">(</span><span class="n">op</span><span class="o">(</span><span class="s">"+"</span><span class="o">,</span> <span class="o">(</span><span class="n">l</span><span class="o">,</span> <span class="n">r</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="n">l</span> <span class="o">+</span> <span class="n">r</span><span class="o">),</span> <span class="mi">10</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">infixl</span><span class="o">(</span><span class="n">op</span><span class="o">(</span><span class="s">"-"</span><span class="o">,</span> <span class="o">(</span><span class="n">l</span><span class="o">,</span> <span class="n">r</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="n">l</span> <span class="o">-</span> <span class="n">r</span><span class="o">),</span> <span class="mi">10</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">infixl</span><span class="o">(</span><span class="nc">Parsers</span><span class="o">.</span><span class="na">or</span><span class="o">(</span><span class="n">term</span><span class="o">(</span><span class="s">"*"</span><span class="o">),</span> <span class="no">WHITESPACE_MUL</span><span class="o">).</span><span class="na">retn</span><span class="o">((</span><span class="n">l</span><span class="o">,</span> <span class="n">r</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="n">l</span> <span class="o">*</span> <span class="n">r</span><span class="o">),</span> <span class="mi">20</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">infixl</span><span class="o">(</span><span class="n">op</span><span class="o">(</span><span class="s">"/"</span><span class="o">,</span> <span class="o">(</span><span class="n">l</span><span class="o">,</span> <span class="n">r</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="n">l</span> <span class="o">/</span> <span class="n">r</span><span class="o">),</span> <span class="mi">20</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">prefix</span><span class="o">(</span><span class="n">op</span><span class="o">(</span><span class="s">"-"</span><span class="o">,</span> <span class="n">v</span> <span class="o">-&gt;</span> <span class="o">-</span><span class="n">v</span><span class="o">),</span> <span class="mi">30</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">build</span><span class="o">(</span><span class="n">unit</span><span class="o">);</span></code></pre></figure>
+
+<p>ActiveJ Specializer shows its bests with tree-like data structures. So we will parse expressions to AST:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">Parser</span><span class="o">&lt;</span><span class="nc">CalculatorExpression</span><span class="o">&gt;</span> <span class="no">EXPRESSION</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">OperatorTable</span><span class="o">&lt;</span><span class="nc">CalculatorExpression</span><span class="o">&gt;()</span>
+		<span class="o">.</span><span class="na">infixl</span><span class="o">(</span><span class="no">DELIMITERS</span><span class="o">.</span><span class="na">token</span><span class="o">(</span><span class="s">"+"</span><span class="o">).</span><span class="na">retn</span><span class="o">(</span><span class="nl">Sum:</span><span class="o">:</span><span class="k">new</span><span class="o">),</span> <span class="mi">10</span><span class="o">)</span>
+		<span class="o">.</span><span class="na">infixl</span><span class="o">(</span><span class="no">DELIMITERS</span><span class="o">.</span><span class="na">token</span><span class="o">(</span><span class="s">"-"</span><span class="o">).</span><span class="na">retn</span><span class="o">(</span><span class="nl">Sub:</span><span class="o">:</span><span class="k">new</span><span class="o">),</span> <span class="mi">10</span><span class="o">)</span>
+		<span class="o">.</span><span class="na">infixl</span><span class="o">(</span><span class="no">DELIMITERS</span><span class="o">.</span><span class="na">token</span><span class="o">(</span><span class="s">"*"</span><span class="o">).</span><span class="na">retn</span><span class="o">(</span><span class="nl">Mul:</span><span class="o">:</span><span class="k">new</span><span class="o">),</span> <span class="mi">20</span><span class="o">)</span>
+		<span class="o">.</span><span class="na">infixl</span><span class="o">(</span><span class="no">DELIMITERS</span><span class="o">.</span><span class="na">token</span><span class="o">(</span><span class="s">"/"</span><span class="o">).</span><span class="na">retn</span><span class="o">(</span><span class="nl">Div:</span><span class="o">:</span><span class="k">new</span><span class="o">),</span> <span class="mi">20</span><span class="o">)</span>
+		<span class="o">.</span><span class="na">infixl</span><span class="o">(</span><span class="no">DELIMITERS</span><span class="o">.</span><span class="na">token</span><span class="o">(</span><span class="s">"%"</span><span class="o">).</span><span class="na">retn</span><span class="o">(</span><span class="nl">Mod:</span><span class="o">:</span><span class="k">new</span><span class="o">),</span> <span class="mi">20</span><span class="o">)</span>
+		<span class="o">.</span><span class="na">prefix</span><span class="o">(</span><span class="no">DELIMITERS</span><span class="o">.</span><span class="na">token</span><span class="o">(</span><span class="s">"-"</span><span class="o">).</span><span class="na">retn</span><span class="o">(</span><span class="nl">Neg:</span><span class="o">:</span><span class="k">new</span><span class="o">),</span> <span class="mi">30</span><span class="o">)</span>
+		<span class="o">.</span><span class="na">infixr</span><span class="o">(</span><span class="no">DELIMITERS</span><span class="o">.</span><span class="na">token</span><span class="o">(</span><span class="s">"^"</span><span class="o">).</span><span class="na">retn</span><span class="o">(</span><span class="nl">Pow:</span><span class="o">:</span><span class="k">new</span><span class="o">),</span> <span class="mi">40</span><span class="o">)</span>
+		<span class="o">.</span><span class="na">build</span><span class="o">(</span><span class="no">ATOM</span><span class="o">);</span></code></pre></figure>
+
+<p>Assume we have a simple equation <code class="language-plaintext highlighter-rouge">3 + 2 * 4</code>. According to the parser, the following AST will be created:</p>
+
+<script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.js"></script>
+<div class="mermaid">
+graph TD
++ --&gt; 3
++ --&gt; *
+* --&gt; 2
+* --&gt; 4
+</div>
+
+<p>Let’s test Specializer out:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+	<span class="kt">double</span> <span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+
+	<span class="c1">// manual code, super fast</span>
+	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(((</span><span class="mf">2.0</span> <span class="o">+</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="mf">2.0</span><span class="o">)</span> <span class="o">*</span> <span class="o">-</span><span class="n">x</span><span class="o">)</span> <span class="o">+</span> <span class="mf">5.0</span> <span class="o">+</span> <span class="mf">1024.0</span> <span class="o">/</span> <span class="o">(</span><span class="mf">100.0</span> <span class="o">+</span> <span class="mf">58.0</span><span class="o">)</span> <span class="o">*</span> <span class="mf">50.0</span> <span class="o">*</span> <span class="mf">37.0</span> <span class="o">-</span> <span class="mf">100.0</span> <span class="o">+</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="o">(</span><span class="nc">Math</span><span class="o">.</span><span class="na">pow</span><span class="o">(</span><span class="n">x</span><span class="o">,</span> <span class="mf">2.0</span><span class="o">))</span> <span class="o">%</span> <span class="mf">3.0</span><span class="o">);</span>
+
+	<span class="nc">CalculatorExpression</span> <span class="n">expression</span> <span class="o">=</span> <span class="no">PARSER</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"((2 + 2 * 2) * -x) + 5 + 1024 / (100 + 58) * 50 * 37 - 100 + 2 * x ^ 2 % 3"</span><span class="o">);</span>
+
+	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">expression</span><span class="o">);</span>
+
+	<span class="c1">// tree-walking evaluation, super slow</span>
+	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">expression</span><span class="o">.</span><span class="na">evaluate</span><span class="o">(</span><span class="n">x</span><span class="o">));</span>
+
+	<span class="c1">// specialized instance evaluation, about as fast as manual code</span>
+	<span class="nc">CalculatorExpression</span> <span class="n">specialized</span> <span class="o">=</span> <span class="no">SPECIALIZER</span><span class="o">.</span><span class="na">specialize</span><span class="o">(</span><span class="n">expression</span><span class="o">);</span>
+	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">specialized</span><span class="o">.</span><span class="na">evaluate</span><span class="o">(</span><span class="n">x</span><span class="o">));</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>ActiveJ Specializer transforms the AST to a set of static final classes with baked-in values of the provided 
+equation. JIT heavily optimizes and inlines these classes while runtime. As a result, we receive an optimized expression 
+instance that can be reused in case we calculate an equation with an unknown value several times.</p>
+
+<p>It’s time for some benchmarks. Let’s try to process an equation 
+<code class="language-plaintext highlighter-rouge">((2 + 2 * 2) * -x) + 5 + 1024 / (100 + 58) * 50 * 37 - 100 + 2 * x ^ 2 % 3</code> in three different ways and compare the performance:</p>
+<ul>
+  <li>manually enter the equation</li>
+  <li>parse the equation to an AST and evaluate it <strong>without specialization</strong></li>
+  <li>parse the equation to an AST and evaluate it <strong>with specialization</strong></li>
+</ul>
+
+<p>The results of the benchmark are very illustrative:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml">Benchmark                        Mode  Cnt    Score   Error  Units
+CalculatorBenchmark.ast          avgt   10  828.924 ± 8.369  ns/op
+CalculatorBenchmark.manual       avgt   10  115.985 ± 1.009  ns/op
+CalculatorBenchmark.specialized  avgt   10  117.635 ± 1.500  ns/op</code></pre></figure>
+
+<p>As you can see, a manually typed equations and specialized AST were processed equally fast. ActiveJ Specializer sped
+up AST processing 8 times.</p>
+
+    <div class="row docs-prevnext">
+        
+            <div class="col-sm-6"></div>
+        
+        
+    </div>
+</div>
+
+
+                </div>
+            </div>
+        
+        <div class="container justify-content-between footer">
+            <div class="col-md-4 col-lg-5"> &copy; 2021 ActiveJ LLC. All Rights Reserved</div>
+            <div class="col-md-4 col-lg-3">Contact us: contact@activej.io</div>
+            <div class="col-md-8 col-lg-4 footer__menu">
+                <a href="http://uikernel.io">UIKernel</a>
+                <a href="https://adkernel.com">AdKernel</a>
+                <a href="https://github.com/activej/activej">GitHub</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="../static/js/leon.js"></script>
+    <script src="../static/js/index.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
